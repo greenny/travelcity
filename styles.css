@@ -225,6 +225,7 @@ display: none;
     font-size: 9pt;
     height: 100%;
     margin-top: 0;
+    box-sizing: border-box;
 }
 .b-tcarticle__image {
     width: 100%;
