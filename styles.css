@@ -1,0 +1,338 @@
+
+@font-face {
+    font-family: "Rockwell";
+    src: url("fonts/ufonts.com_rockwell.ttf");
+}
+@font-face {
+    font-family: "Calibri";
+    src: url("fonts/calibri.ttf");
+}
+body {
+    background: rgba(0, 0, 0, 0) url("images/Background.png") repeat scroll center 0;
+    margin: 0 0 30px;
+}
+
+.clear {
+    clear: both;
+    float: none;
+}
+
+
+.b-tcheader {
+    color: #000000;
+    font-family: Rockwell;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin: 0;
+}
+.b-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 928px;
+    min-width: 320px;
+    width: 100%;
+}
+.b-container__box {
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+    margin-top: 15px;
+    padding: 10px;
+}
+.b-container__head {
+}
+.b-head {
+    text-align: center;
+}
+.b-head__logo {
+    border: 0 none;
+    display: inline-block;
+    padding: 31px 0 20px;
+    width: 36%;
+}
+.b-logo {
+    width: 100%;
+}
+.b-container__menu {
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+}
+.b-menu {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.b-menu__item {
+    display: inline-block;
+    padding: 0 5px;
+    text-align: center;
+}
+.b-menu__item_current {
+    color: red;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.b-menu__link {
+    color: #5b5b5b;
+    display: block;
+    font-family: Rockwell;
+    font-size: 13pt;
+    font-weight: 400;
+    padding: 5px 35px;
+    text-decoration: none;
+}
+.b-menu__item_current .b-menu__link {
+    color: red;
+}
+.b-menu_style_light .b-menu__link {
+    color: #545454;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+.b-menubar {
+    position: relative;
+}
+.b-menubar__menu {
+    display: inline-block;
+    padding: 0 0 0 13px;
+}
+.b-menubar__menu_mobile{
+display: none;
+}
+
+.b-menubar__search {
+    display: inline-block;
+    height: 31px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.b-search {
+    background: #fafafa none repeat scroll 0 0;
+    border: 1px solid #cdcdcd;
+    display: inline-block;
+    font-family: Rockwell;
+    font-size: 0;
+    height: 100%;
+    white-space: nowrap;
+}
+.b-search__text {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    box-sizing: border-box;
+    color: rgba(91, 91, 91, 0.19);
+    font-family: Rockwell;
+    font-size: 13pt;
+    font-style: italic;
+    font-weight: 400;
+    height: 100%;
+    max-width: 261px;
+    padding: 8px 16px;
+}
+.b-search__button {
+    background: rgba(0, 0, 0, 0) url("images/search1.png") no-repeat scroll center center;
+    border: 0 none;
+    height: 100%;
+    vertical-align: top;
+    width: 41px;
+}
+.b-container__slider {
+    margin-top: 15px;
+}
+.b-slider {
+    background-color: #ffffff;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    font-size: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.b-slider__nav {
+    bottom: 0;
+    height: 48px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: inherit;
+}
+.b-arrows {
+    font-size: 0;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.b-arrows__arrow {
+    background: rgba(0, 0, 0, 0) url("images/arrows.png") repeat scroll 0 0;
+    cursor: pointer;
+    display: inline-block;
+    height: inherit;
+    margin: 0 20px;
+    opacity: 0.5;
+    transition: all 0.4s ease 0s;
+    width: 43px;
+}
+.b-arrows__arrow:hover {
+    opacity: 1;
+}
+.b-arrows__arrow_dir_prev {
+    background-position: 0 0;
+}
+.b-arrows__arrow_dir_next {
+    background-position: -43px 0;
+    position: absolute;
+    right: 0;
+}
+.b-slide {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 15px;
+    vertical-align: top;
+}
+.b-slider__slides {
+    content: "/*-1px to compensate parent`s top & bottom borders*/";
+    font-size: 0;
+    margin: -1px 0;
+    white-space: nowrap;
+}
+.b-slide__image {
+    width: 100%;
+}
+.b-container__articles {
+    margin-left: -1%;
+    margin-top: 15px;
+}
+.b-container__content {
+    margin-top: 15px;
+}
+.b-articles {
+    font-size: 0;
+}
+.b-articles__article {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 375px;
+    padding: 0 0 0 1%;
+    vertical-align: top;
+    width: 25%;
+}
+.b-tcarticle {
+    font-family: Rockwell;
+    font-size: 9pt;
+    height: 100%;
+    margin-top: 0;
+}
+.b-tcarticle__image {
+    width: 100%;
+}
+.b-tcarticle__text {
+    color: #333433;
+    font-weight: 400;
+    margin: 0 0 12px;
+}
+.b-tcarticle__more {
+    color: #333333;
+    float: right;
+}
+.b-content {
+    display: table;
+    font-family: Rockwell;
+    font-size: 9pt;
+}
+.b-content__image {
+    display: table-cell;
+}
+.b-content__info {
+    display: table-cell;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+}
+.b-content__header {
+    margin-bottom: 8px;
+}
+.b-content__text {
+    color: #333433;
+}
+.b-tccontent {
+    padding-right: 14px;
+}
+.b-tccontent__link {
+    color: #000000;
+    display: block;
+    float: right;
+    font-family: Rockwell;
+    font-size: 9pt;
+    font-weight: 400;
+    margin-top: 24px;
+}
+.b-tcmenu {
+}
+.b-container__footer {
+}
+.b-footer {
+    font-family: Calibri;
+    font-size: 11pt;
+    position: relative;
+}
+.b-footer__menu {
+    display: inline-block;
+}
+.b-footer__copyright {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.b-footer__link {
+    color: #545454;
+    transition: all 0.4s ease 0s;
+}
+.b-footer__link:hover {
+    color: #00b900;
+}
+@media screen and (min-width: 600px) and (max-width: 840px) {
+.b-menubar__menu {
+    display: block;
+    padding: 0;
+    text-align: center;
+}
+.b-menubar__search {
+    display: block;
+    margin-top: 5px;
+    position: static;
+    text-align: center;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 599px) {
+.b-menubar__menu_mobile{}
+}
+@media screen and (max-width: 700px) {
+.b-articles__article {
+    height: auto;
+    margin-bottom: 5px;
+    width: 50%;
+}
+.b-tcarticle__image {
+    float: left;
+    margin-right: 7px;
+    width: 47%;
+}
+.b-content__welcomemsg {
+    width: 100%;
+}
+}
+@media screen and (max-width: 780px) {
+.b-container__menu {
+}
+.b-menubar__menu {
+    width: auto;
+}
+.b-menu {
+}
+.b-menubar__search {
+}
+}
