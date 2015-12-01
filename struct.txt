@@ -2,23 +2,23 @@ b-container
 	b-container__head
 		b-head
 			b-head__logo
-				b-logo" src="images/TravelCity.png
+				b-logo src="images/TravelCity.png"
 	b-container__menu
 		b-menubar
 			b-menubar__menu
 				b-menu
 					b-menu__item b-menu__item_current
-						b-menu__link" href="#
+						b-menu__link href="#"
 					b-menu__item
-						b-menu__link" href="#
+						b-menu__link href="#"
 					b-menu__item
-						b-menu__link" href="#
+						b-menu__link href="#"
 					b-menu__item
-						b-menu__link" href="#
+						b-menu__link href="#"
 			b-menubar__search
 				b-search
-					b-search__text b-search__input" type="text" placeholder="search
-					b-search__button b-search__input" type="image" src="images/search.png
+					b-search__text b-search__input type="text" placeholder="search"
+					b-search__button b-search__input type="image" src="images/search.png"
 	b-container__slider
 		b-slider
 			b-slider__nav
@@ -34,16 +34,16 @@ b-container
 				b-articles
 					b-articles__article
 						b-tcarticle
-							b-tcarticle__image" src="images/OldFarm.png
+							b-tcarticle__image src="images/OldFarm.png"
 							b-tcarticle__text
 				b-content__welcomemsg b-articles__article
 					b-welcomemsg
-						b-welcomemsg__image" src="images/collage.png
+						b-welcomemsg__image" src="images/collage.png"
 						b-welcomemsg__content
 							b-tcheader
 							b-tccontent
 								b-tccontent__text b-tcarticle__text
-								b-tccontent__link" href="#
+								b-tccontent__link href="#"
 		b-container__footer
 			b-footer
 				b-footer__menu
